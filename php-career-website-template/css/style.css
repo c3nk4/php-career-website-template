@@ -1,0 +1,482 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Montserrat:ital,wght@0,100;0,200;1,300&family=Noto+Sans:wght@400;700&family=Poppins:wght@200&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,900&family=Voltaire&display=swap');
+
+/*Genel*/
+
+body {
+
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar, .navbar a{
+  
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+
+}
+
+.navbar ul{
+
+  margin-top: 0px;
+  margin-bottom: 7px;
+
+}
+
+.mavi{
+  
+  background-color: #0672ca;
+
+}
+
+.py-12 {
+
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+}
+
+.py-15 {
+
+  padding-top: 150px;
+  padding-bottom: 150px;
+
+}
+
+#indexBanner img {
+
+  margin-top: -120px;
+
+}
+
+#indexBanner h1 {
+
+  color: #1d1d1d;
+  font-family: Montserrat, sans-serif;
+  font-size: 68px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+
+}
+
+#iletisimBanner,
+#blogBanner,
+#cta {
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+h2, #slider h2 {
+  font-weight: 500;
+  font-size: 35px;
+
+}
+
+
+.cizgi {
+  width: 55px;
+  height: 2px;
+  background-color: #499add;
+}
+
+
+/*İlanlar*/
+
+#kutu h5,
+i {
+  color: #0672ca;
+}
+
+#kutu {
+  margin-left: 75px;
+  margin-right: -40px;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .10)
+
+}
+
+#kutu:hover {
+  background-color: #0672ca;
+}
+
+#kutu:hover span {
+  color: #fff;
+}
+
+#kutu:hover h5 {
+  color: #fff;
+}
+
+#kutu:hover i {
+  color: #fff;
+}
+
+/*Sayilarla Biz*/
+
+#sayilarlaBiz i {
+  font-size: 85px;
+  color: #499add;
+}
+
+#sayilarlaBiz p {
+
+  color: #505050;
+}
+
+#sayilarlaBiz:hover {
+  background-color: #499add;
+  color: #fff;
+  transition: all .3s;
+
+}
+
+#sayilarlaBiz:hover p {
+  transition: all .3s;
+  color: #fff;
+
+}
+
+#sayilarlaBiz:hover i {
+  transition: all .3s;
+  color: #fff;
+
+}
+
+/*navbar*/
+
+.navbar .navbar-nav .nav-link {
+  color: #000;
+  border-bottom: 5px solid #fff;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+  color: #0c6ab6;
+}
+
+
+
+/*footer*/
+
+#footer,
+#footer a,
+footer i {
+  background: rgb(36, 35, 35);
+  color: #fff;
+  text-decoration: none;
+
+}
+
+#footer .bis {
+  font-size: 32px;
+
+}
+
+
+
+/*admin panel*/
+
+#adminMenu li {
+  list-style: none;
+  margin: 20px 0;
+
+}
+
+#adminMenu li a {
+  text-decoration: none;
+  color: #fff;
+
+}
+
+/*accordion*/
+
+.accordion {
+  background-color: #f3f5f9;
+  color: #000;
+  cursor: pointer;
+  padding: 23px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+  transition: 0.4s;
+  box-shadow: 0 1px 3px 0 rgb(0, 0, 0, .1);
+}
+
+.active,
+.accordion:hover {
+  background-color: rgba(204, 204, 204, 0.605);
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  margin-bottom: 6px;
+  background-color: rgb(255, 255, 255);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+
+}
+
+/* Slider */
+
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.dot-container {
+  text-align: center;
+  padding: 20px;
+  background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.activez,
+.dot:hover {
+  background-color: #717171;
+}
+
+q {
+  font-style: italic;
+}
+
+.author {
+  color: cornflowerblue;
+}
+
+.hover-img {
+  background-color: #499add;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  max-width: 450px;
+  min-width: 240px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.hover-img * {
+  box-sizing: border-box;
+  transition: all 0.45s ease;
+}
+
+.hover-img:before,
+.hover-img:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 32px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: '';
+  transition: all 0.3s ease;
+  z-index: 1;
+  opacity: 0;
+  transform: scaleY(2);
+}
+
+.hover-img img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+}
+
+.hover-img figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.1em;
+  opacity: 0;
+  z-index: 2;
+  transition-delay: 0.1s;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1px;
+
+}
+
+.hover-img:hover:before,
+.hover-img:hover:after {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.hover-img:hover>img {
+  opacity: 0.7;
+}
+
+.hover-img:hover figcaption {
+  opacity: 1;
+}
+
+
+
+
+/* Mobil CSS --------------------------------------------*/
+
+@media (max-width:768px) {
+
+
+  #indexBanner {
+
+    padding-bottom: 0;
+
+  }
+
+  #indexBanner h1 {
+
+    font-size: 46px;
+    margin-top: -4.5rem !important;
+
+  }
+
+  #indexBanner img {
+
+    margin-top: 3.5rem !important;
+
+  }
+
+
+  #kutu {
+
+    margin: 0 auto;
+    padding: 5px 18px !important;
+    border: 1px solid rgb(202, 202, 202) !important;
+
+
+  }
+
+  #ebulten {
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    margin: 20px 0;
+    padding-top: 18px;
+    padding-bottom: 9px;
+
+  }
+
+  #cta button {
+
+    margin-top: 25px;
+  }
+
+  #icerik img {
+    display: none;
+  }
+
+  #side {
+    margin-right: 22px;
+  }
+
+  #blogBanner,
+  #iletisimBanner,
+  #hakkimizdaBanner {
+    padding: 45px 0;
+
+  }
+
+  #blogİndex {
+    margin-right: 10px;
+  }
+
+}
+
+/* Tablet-----------------------------*/
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+  #indexBanner h1 {
+    font-size: 42px;
+    margin-top: -4rem !important;
+}
+
+#indexBanner img {
+  margin-top: -6.5rem !important;
+}
+
+#footer .col-md-4{
+  border: none;
+}
+
+#footer .col-md-4:nth-child(2){
+  margin: -17px 0;
+  padding-top: 18px;
+  padding-bottom: 9px;
+  
+}
+
+#footer .border-right{
+  border-right: none!important;  
+}
+
+
+
+
+}
